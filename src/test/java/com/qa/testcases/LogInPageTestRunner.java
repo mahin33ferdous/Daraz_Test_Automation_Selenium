@@ -133,11 +133,11 @@ public class LogInPageTestRunner extends BaseClass {
 			loginPage=new LogInPage(driver);
 			loginPage.login("shoily9192@gmail.com", "123");
 			
-//			checkNotLoggedIn(); // User is unable to log in......................................
+			checkNotLoggedIn(); // User is unable to log in......................................
 			
-			boolean Validate_logIn = driver.findElement(By.xpath("//span[@id='myAccountTrigger']")).isDisplayed();
-			Assert.assertFalse(Validate_logIn );
-		
+//			boolean Validate_logIn = driver.findElement(By.xpath("//span[@id='myAccountTrigger']")).isDisplayed();
+//			Assert.assertFalse(Validate_logIn );
+//		
 		}
 		
 
