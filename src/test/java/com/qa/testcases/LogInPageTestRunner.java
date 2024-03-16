@@ -52,7 +52,7 @@ public class LogInPageTestRunner extends BaseClass {
 	        //Assert.assertFalse(validationError_Email_actual.contains(validationError_expected));
 	        Assert.assertTrue(validationError_Email_actual.contains(validationError_expected)); // check error message is displayed
 	        
-	        checkNotLoggedIn(); // User is unable to log in......................................
+	        checkNotLoggedIn(); // check User is unable to log in......................................
 		}
 		
 		
@@ -68,7 +68,7 @@ public class LogInPageTestRunner extends BaseClass {
 	        String validationError_expected = "The length of the Phone or Email should be 6-60 characters.";
 	        Assert.assertTrue(validationError_actual.contains(validationError_expected)); // check error message is displayed
 	        
-	        checkNotLoggedIn(); // User is unable to log in......................................
+	        checkNotLoggedIn(); //check User is unable to log in......................................
 		}
 		
 		
@@ -85,7 +85,7 @@ public class LogInPageTestRunner extends BaseClass {
 	        String validationError_expected = "The length of the Phone or Email should be 6-60 characters.";
 	        Assert.assertTrue(validationError_actual.contains(validationError_expected)); // check error message is displayed
 	        
-	        checkNotLoggedIn(); // User is unable to log in......................................
+	        checkNotLoggedIn(); // check User is unable to log in......................................
 		
 		}
 		
@@ -101,7 +101,7 @@ public class LogInPageTestRunner extends BaseClass {
 			boolean Error_Validate_Invalid_Email = driver.findElement(By.xpath("//form[1]/div[1]/div[1]/div[1]/span[1]")).isDisplayed();
 			Assert.assertFalse(Error_Validate_Invalid_Email); // check error message is displayed
 			
-			checkNotLoggedIn(); // User is unable to log in......................................
+			checkNotLoggedIn(); // check User is unable to log in......................................
 			
 //			boolean Validate_logIn = driver.findElement(By.xpath("//span[@id='myAccountTrigger']")).isDisplayed();
 // 		    Assert.assertFalse(Validate_logIn );
@@ -120,7 +120,7 @@ public class LogInPageTestRunner extends BaseClass {
 	        String validationError_expected = "You can't leave this empty.";
 	        Assert.assertTrue(validationError_actual.contains(validationError_expected)); // check error message is displayed
 	        
-	        checkNotLoggedIn(); // User is unable to log in......................................
+	        checkNotLoggedIn(); // check User is unable to log in......................................
 		
 		}
 		
@@ -133,7 +133,7 @@ public class LogInPageTestRunner extends BaseClass {
 			loginPage=new LogInPage(driver);
 			loginPage.login("shoily9192@gmail.com", "123");
 			
-			checkNotLoggedIn(); // User is unable to log in......................................
+			checkNotLoggedIn(); // check User is unable to log in......................................
 			
 //			boolean Validate_logIn = driver.findElement(By.xpath("//span[@id='myAccountTrigger']")).isDisplayed();
 //			Assert.assertFalse(Validate_logIn );
