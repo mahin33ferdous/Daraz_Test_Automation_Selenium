@@ -65,67 +65,18 @@ public class LogInPage extends BaseClass{
 	
 	}
 	
-	public void emailValidation(String e) throws InterruptedException {
-		login.click();
-		Email.clear();
-		password.clear();
-		Thread.sleep(1000);
-		Email.sendKeys(e);
-		Thread.sleep(3000);
-		Email.clear();
-		Thread.sleep(3000);
-	}
-	
-	
-	public void passwordValidation(String e, String p) throws InterruptedException {
-		login.click();
-		Email.clear();
-		password.clear();
-		Thread.sleep(1000);
-		Email.sendKeys(e);
-		Thread.sleep(3000);
-		password.sendKeys(p);
-		Thread.sleep(3000);
-	}
-	
-	
-	public void login1(String e,String p) throws InterruptedException {
-		login.click();
-		Thread.sleep(2000);
-	
-		Email.sendKeys(e);
-		Thread.sleep(2000);
-		
-		password.sendKeys(p);
-		Thread.sleep(2000);
-		System.out.println("Before clearing: " + Email.getAttribute("value"));
-//		Email.click();
+//	public void emailValidation(String e) throws InterruptedException {
+//		login.click();
 //		Email.clear();
-		
-    
-       
-		
-		Thread.sleep(2000);
-		
-		Email.sendKeys(e);
-		Thread.sleep(2000);
-		
-		password.sendKeys(p);
-		Thread.sleep(2000);
-		
-		loginSubmit.click();
-		Thread.sleep(3000);
-		
-		Email.clear();
-		password.clear();
-		
-
-		
-	
-	}
+//		password.clear();
+//		Thread.sleep(1000);
+//		Email.sendKeys(e);
+//		Thread.sleep(3000);
+//		Email.clear();
+//		Thread.sleep(3000);
+//	}
 	
 	
-
 	
 	public void doLogOut() throws InterruptedException {
 		
