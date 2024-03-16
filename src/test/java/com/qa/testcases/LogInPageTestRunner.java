@@ -41,7 +41,7 @@ public class LogInPageTestRunner extends BaseClass {
 		
 //.....................................................Empty Email................................................................................		
 		
-		@Test(priority=2, description = "Varify error text with empty Email and user will be not able to log in")
+		@Test(priority=2, description = "Varify error text with empty Email and user will  not be able to log in")
 		public void validEmailTest1() throws InterruptedException {
 			
 			loginPage=new LogInPage(driver);
@@ -58,7 +58,7 @@ public class LogInPageTestRunner extends BaseClass {
 		
 //.....................................................asd........................................................................................			
 		
-		@Test(priority=3, description = "Varify error text with empty email \"asd\" and user will be not able to log in")
+		@Test(priority=3, description = "Varify error text with empty email \"asd\" and user will not be able to log in")
 		public void validEmailTest2() throws InterruptedException {
 			
 			loginPage=new LogInPage(driver);
@@ -75,7 +75,7 @@ public class LogInPageTestRunner extends BaseClass {
 		
 //.....................................................asd@........................................................................................			
 		
-		@Test(priority=4, description = "Varify error text with empty email \\\"asd\\\" and user will be not able to log in")
+		@Test(priority=4, description = "Varify error text with email \\\"asd\\\" and user will not be able to log in")
 		public void validEmailTest3() throws InterruptedException {
 			
 			loginPage=new LogInPage(driver);
@@ -92,7 +92,7 @@ public class LogInPageTestRunner extends BaseClass {
 		
 //....................................................asd@gmail.com........................................................................................			
 		
-		@Test(priority=5, description = "Varify error text with empty email \\\"asd@gmail.com\\\" and user will be not able to log in. ")
+		@Test(priority=5, description = "Varify error text with  email \\\"asd@gmail.com\\\" and user will not be able to log in. ")
 		public void validEmailTest4() throws InterruptedException {
 			
 			loginPage=new LogInPage(driver);
@@ -111,7 +111,7 @@ public class LogInPageTestRunner extends BaseClass {
 		
 //.....................................................Empty Password................................................................................				
 		
-		@Test(priority=6, description = "Varify error text with empty password and user will be not able to log in")
+		@Test(priority=6, description = "Varify error text with empty password and user will not be able to log in")
 		public void validPassTest1() throws InterruptedException {
 			
 			loginPage=new LogInPage(driver);
@@ -127,7 +127,7 @@ public class LogInPageTestRunner extends BaseClass {
 		
 //.....................................................Password 123...............................................................................			
 		
-		@Test(priority=7, description = "Varify error text with password 123 and user will be not able to log in")
+		@Test(priority=7, description = "Varify error text with password 123 and user will not be able to log in")
 		public void validPassTest2() throws InterruptedException {
 			
 			loginPage=new LogInPage(driver);
